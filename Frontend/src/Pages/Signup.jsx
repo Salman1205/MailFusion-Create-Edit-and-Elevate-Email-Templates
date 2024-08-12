@@ -23,7 +23,7 @@ const Signup = ({ loginCredentials, setLoginCredentials }) => {
         const formData = new FormData(form);
 
         try {
-            const response = await fetch('${process.env.REACT_APP_LOGIN_SIGNUP_URL}/register', {
+            const response = await fetch(`${process.env.REACT_APP_LOGIN_SIGNUP_URL}/register`, {
                 method: 'POST',
                 body: formData
             });
